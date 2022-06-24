@@ -1,0 +1,58 @@
+{
+	"variables": [],
+	"info": {
+		"name": "JWT_Test",
+		"_postman_id": "4dd3cd28-cac1-6914-6829-1f6b3bbc954d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/test",
+			"request": {
+				"url": "http://localhost:8080/test",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE2NDUxMzU3ODUsImlhdCI6MTY0NTExNzc4NX0.RmQAoUXX1wLYf77SMRRlVvpECYLt9QWTKF45hO_5X3UHcutnQvo08WZYodLa5tJIR3iXZn1Vs3NWDr1DYB_5og",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/authenticate",
+			"request": {
+				"url": "http://localhost:8080/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "javainuse",
+						"description": ""
+					},
+					{
+						"key": "password",
+						"value": "password",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"javainuse\",\n\"password\":\"password\"\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
